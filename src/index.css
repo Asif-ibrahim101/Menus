@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F6F9;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.divider {
+    width: 120px;
+    height: 5px;
+    background-color: #FF6000;
+    margin: 0.5rem;
+}
+
+.categories_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.categories_btn button {
+    background-color: #FF6000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    text-transform: capitalize;
+}
+.categories_btn button:first-child{
+    padding: 0.5rem 1rem;
+}
+
+.menu_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 100px 100px;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+}
+
+.menu_parts {
+    width: 400px;
+    background-color: white;
+}
+
+.menu_image {
+    width: 400px;
+    height: 300px;
+}
+
+.menu_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu_contents {
+    width: 400px;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.menu_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.menu_title p {
+    background-color: #FF6000;
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+}
